@@ -1,0 +1,21 @@
+apiVersion: 1
+
+deleteDatasources:
+  - name: PostgreSQL-IoT
+    orgId: 1
+
+datasources:
+  - name: PostgreSQL-IoT
+    type: postgres
+    uid: pg-iot-datasource
+    access: proxy
+    url: postgres:5432
+    user: postgres
+    secureJsonData:
+      password: $POSTGRES_PASSWORD
+    jsonData:
+      database: iot_db
+      sslmode: disable
+      postgresVersion: 1500
+    isDefault: true
+    editable: true

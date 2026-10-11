@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+.env
+
+# Données et logs
+data_lake/
+spark-warehouse/
+*.log
+
+# IDE
+.vscode/
+.idea/
